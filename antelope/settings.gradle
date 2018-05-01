@@ -1,3 +1,6 @@
 rootProject.name = 'antelope'
+
 include 'antelope-common'
+include 'antelope-core'
+include 'antelope-service'
 
