@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class PersonController {
-    @Reference(url = "dubbo://127.0.0.1:20880")
+    @Reference
     public PersonInfoService personInfoService;
 
 

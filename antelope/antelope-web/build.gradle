@@ -28,5 +28,8 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-amqp')
 	compile('org.springframework.boot:spring-boot-starter-web')
 	compile('com.alibaba.spring.boot:dubbo-spring-boot-starter:2.0.0')
+	compile group: 'org.apache.zookeeper', name: 'zookeeper', version: "$zookeeperVersion", ext: 'pom'
+	// https://mvnrepository.com/artifact/com.101tec/zkclient
+	compile group: 'com.101tec', name: 'zkclient', version: "$zkclientVersion"
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
