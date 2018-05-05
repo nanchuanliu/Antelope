@@ -1,4 +1,4 @@
-package antelope.web.controller;
+package com.antelope.web.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.antelope.model.PersonInfo;

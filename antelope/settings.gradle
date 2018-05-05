@@ -1,6 +1,4 @@
 rootProject.name = 'antelope'
 
 include 'antelope-common'
-include 'antelope-core'
-include 'antelope-service'
-
+include 'antelope-core','antelope-service','antelope-web'

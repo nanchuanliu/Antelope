@@ -1,4 +1,4 @@
-package antelope.web;
+package com.antelope.web;
 
 import com.alibaba.dubbo.spring.boot.annotation.EnableDubboConfiguration;
 import org.springframework.boot.SpringApplication;

@@ -15,7 +15,7 @@ apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
-group = 'antelope-web'
+group = 'antelope-sso'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
 
@@ -25,13 +25,16 @@ repositories {
 
 
 dependencies {
-	compile('org.springframework.boot:spring-boot-starter-amqp')
+	compile('org.springframework.boot:spring-boot-starter')
 	compile('org.springframework.boot:spring-boot-starter-web')
-	compile('com.alibaba.spring.boot:dubbo-spring-boot-starter:2.0.0')
-	compile group: 'org.apache.zookeeper', name: 'zookeeper', version: "$zookeeperVersion", ext: 'pom'
-	// https://mvnrepository.com/artifact/com.101tec/zkclient
-	compile group: 'com.101tec', name: 'zkclient', version: "$zkclientVersion"
-	compile project(':antelope-core')
-	testCompile('org.springframework.boot:spring-boot-starter-test')
 	compile 'org.springframework.boot:spring-boot-starter-data-jpa'
+	compile group: 'org.apache.shiro', name: 'shiro-core', version: "$shiroVersion"
+	compile group: 'org.apache.shiro', name: 'shiro-spring', version: "$shiroVersion"
+	compile group: 'org.crazycake', name: 'shiro-redis', version: "$shiroRedisVersion"
+	compile group: 'com.alibaba', name: 'fastjson', version: "$fastjsonVersion"
+	compile group: 'mysql', name: 'mysql-connector-java', version: "$mySQLDriverVersion"
+	testCompile('org.springframework.boot:spring-boot-starter-test')
+
+
+
 }
