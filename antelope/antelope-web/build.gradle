@@ -32,6 +32,10 @@ dependencies {
 	// https://mvnrepository.com/artifact/com.101tec/zkclient
 	compile group: 'com.101tec', name: 'zkclient', version: "$zkclientVersion"
 	compile project(':antelope-core')
+/*	compile project(':antelope-sso')*/
 	testCompile('org.springframework.boot:spring-boot-starter-test')
+	compile group: 'mysql', name: 'mysql-connector-java', version: "$mySQLDriverVersion"
+
 	compile 'org.springframework.boot:spring-boot-starter-data-jpa'
+
 }

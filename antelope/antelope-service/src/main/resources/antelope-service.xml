@@ -7,7 +7,7 @@
        http://code.alibabatech.com/schema/dubbo
        http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
     <dubbo:application name="antelope-service" />
-    <dubbo:registry address="zookeeper://127.0.0.1:2181" />
+    <dubbo:registry address="zookeeper://172.16.0.11:2181" />
     <bean id="personService" class="com.antelope.service.PersonServiceImpl"/>
     <dubbo:service interface="com.antelope.service.PersonInfoService" ref="personService" />
 </beans>

@@ -1,13 +1,13 @@
 buildscript {
-	ext {
-		springBootVersion = '2.0.1.RELEASE'
-	}
-	repositories {
-		mavenCentral()
-	}
-	dependencies {
-		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
-	}
+    ext {
+        springBootVersion = '2.0.1.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
 }
 
 apply plugin: 'java'
@@ -20,21 +20,18 @@ version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
 
 repositories {
-	mavenCentral()
+    mavenCentral()
 }
 
 
 dependencies {
-	compile('org.springframework.boot:spring-boot-starter')
-	compile('org.springframework.boot:spring-boot-starter-web')
-	compile 'org.springframework.boot:spring-boot-starter-data-jpa'
-	compile group: 'org.apache.shiro', name: 'shiro-core', version: "$shiroVersion"
-	compile group: 'org.apache.shiro', name: 'shiro-spring', version: "$shiroVersion"
-	compile group: 'org.crazycake', name: 'shiro-redis', version: "$shiroRedisVersion"
-	compile group: 'com.alibaba', name: 'fastjson', version: "$fastjsonVersion"
-	compile group: 'mysql', name: 'mysql-connector-java', version: "$mySQLDriverVersion"
-	testCompile('org.springframework.boot:spring-boot-starter-test')
-
-
-
+    compile('org.springframework.boot:spring-boot-starter')
+    compile('org.springframework.boot:spring-boot-starter-web')
+    compile 'org.springframework.boot:spring-boot-starter-data-jpa'
+    compile group: 'org.apache.shiro', name: 'shiro-core', version: "$shiroVersion"
+    compile group: 'org.apache.shiro', name: 'shiro-spring', version: "$shiroVersion"
+    compile group: 'org.crazycake', name: 'shiro-redis', version: "$shiroRedisVersion"
+    compile group: 'com.alibaba', name: 'fastjson', version: "$fastjsonVersion"
+    compile group: 'mysql', name: 'mysql-connector-java', version: "$mySQLDriverVersion"
+    testCompile('org.springframework.boot:spring-boot-starter-test')
 }

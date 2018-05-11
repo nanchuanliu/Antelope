@@ -15,4 +15,9 @@ public class PersonServiceImpl implements PersonInfoService{
         personInfo.setPersonName("abc");
         return personInfo;
     }
+
+    public PersonServiceImpl()
+    {
+        System.out.println("Abc");
+    }
 }

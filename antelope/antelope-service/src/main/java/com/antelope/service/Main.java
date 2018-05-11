@@ -11,9 +11,13 @@ import java.io.IOException;
  * Date: 2018-05-01
  */
 public class Main {
+    public Main()
+    {
+        System.out.println("abcde");
+    }
     public static void main(String[] args) throws IOException {
 
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext( new String[] { "antelope-service.xml" });
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext( new String[] {"antelope-service.xml"});
         context.start();
 
         System.out.println("输入任意按键退出 ~ ");
